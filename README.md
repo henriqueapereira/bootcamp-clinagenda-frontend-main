@@ -1,36 +1,54 @@
-# ClinAgenda
+# 🏥 ClinAgenda - Backend
 
-This project is part of the DEVPIRA + PECEGE 2025 bootcamp. It is designed for those who have never worked with Vue before but already have some web programming knowledge.
+Este projeto foi desenvolvido para o **BootCamp Curso Intensivo de Desenvolvimento Web FullStack com ASP.NET Core & Vue🚀**, uma parceria entre o **PECEGE** e o **DEVPIRA**.
 
-In this project, you will learn:
+Com aulas ministradas por Decio Stenico e Maira Scomparim, a proposta do projeto é construir uma aplicação completa para uso em uma clínica médica, com funcionalidades voltadas à gestão de profissionais, pacientes e agendamentos.
 
-- Vue 3
-- Vuetify
-- Pinia
-- TypeScript
+Este repositório contém **o frontend da aplicação**, desenvolvido em **Vue 3**
 
-## Usage
+---
 
-If this is your first time, run the following command:
+## 🛠️ Tecnologias Utilizadas
+
+- **Vue 3**
+- **Vuetify**
+- **Pinia**
+- **TypeScript**
+
+---
+
+## 🚀 Como Executar o Projeto
+
+Se esta for sua primeira vez, execute o seguinte comando:
 
 ```bash
 yarn
 ```
 
-Now, whenever you want to run this project, simples start the development server with hot-reload, by running the following command:
+Depois disso, sempre que quiser rodar o projeto com recarregamento automático, use:
 
 ```bash
 yarn dev
 ```
 
-The server will be accessible at [http://localhost:3000](http://localhost:3000)
+O servidor estará disponível em http://localhost:3000
 
-### Building for Production
+# Rodando com mock de backend
 
-To build your project for production, use:
+> ⚠️ Algumas funcionalidades podem não estar 100% cobertas pelo mock
+
+No arquivo `.env.development` sete a variável _VITE_USE_MOCK=true_ ou rode o seguinte comando:
 
 ```bash
-yarn build
+yarn dev:mock
 ```
 
-Once the build process is completed, your application will be ready for deployment in a production environment.
+Ao abrir o sistema, deverá ter um alerta no topo da tela indicando que o mock está ativo.
+
+# Gerando o build para produção
+
+Para gerar uma versão do projeto pronta para produção, utilize:
+
+```
+yarn build
+```
